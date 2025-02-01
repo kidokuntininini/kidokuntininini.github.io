@@ -6,16 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <b > Welcome to My Website</b>
-    <br><br>
-    <b>Have a nice day and enjoy my show &#x1F60A</b>
+    
+    <script>
+        window.onload=function(){
+            alert("Hello ! Have a nice day and enjoy my show ") ;
+        }
+    </script>
 
     <h1 align="center">Cristiano Ronaldo</h1>
     <nav align="center">
-        <a href="" >Home</a>
-        <a href="pages/desc.html" >Description</a>
-        <a href="pages/highlights.html">Career Highlights</a>
-        <a href="pages/faq.html">FAQs</a>
+        <a href="" >Home</a> <span>|</span>
+        <a href="pages/desc.html" >Description</a> <span>|</span>
+        <a href="pages/highlights.html">Career Highlights</a> <span>|</span>
+        <a href="pages/faq.html">FAQs</a> <span>|</span>
     
     </nav>
     <br><br>
@@ -74,11 +77,22 @@
         <br><br>
         <h2 align="center">Please Log in to view latest updates &#x1F680 .</h2>
         <form action="request.php" method="get" align="center">
-            <label for="email">Email </label>
-            <input type="text" name="student_mail" id="email">
-            <br><br>
-            <label for="password">Password</label>
-            <input type="password" name="student_psw" id="password">
+            <table align="center">
+            <tr>
+            <td><label for="email">Email </label></td>
+            
+            <td><input type="text" name="student_mail" id="email" align="center"></td>
+        
+        </tr>
+        
+            <tr>
+            
+           <td>  <label for="password">Password</label> </td>
+            
+            <td> <input type="password" name="student_psw" id="password" align="center"> </td>
+       
+            </tr>
+            </table>
             <br><br>
             <button type="submit">Log in</button>
             <br><br>
