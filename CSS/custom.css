@@ -5,8 +5,8 @@
 }
 /* tag / element selector */
 h1{
-    color: red
-    align="center" ;
+    color: red ;
+    text-align: center;
 }
 /* Attribute Selector */
 a[title="google"]{
@@ -54,4 +54,51 @@ a:visited{
 :target{
     color: red;
     border: 2px solid  blue;
+}
+
+/* border */
+
+.borderOne{
+    border: 10px dashed red;
+}
+
+.borderTwo{
+    border-left: 10px solid yellow ;
+}
+
+.borderSizeOne{
+    border-style: solid;
+    /* border width: 10px 100px */
+    /* T&B/L&R */
+    /*border-width: 10px 50px 100px; */
+    /* T/ L&R/B */
+    border-width: 1px 5px 10px 15px;
+    /* T/R/B/L */
+}
+.borderStyle{
+
+    border-style:solid dashed double dotted ;
+    border-color: red green;
+}
+
+.margin{
+    border: 1px solid black;
+    /* margin: 100px */
+    margin: 50px 100px;
+    /* T&B L&R */
+    /* margin left 200px */
+}
+.padding{
+    border: 1px solid red;
+    padding: 100px 10px 50px 20px;
+}
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
 }
