@@ -15,7 +15,7 @@ a[title="google"]{
 }
 /* id selector */
 #One{
-    color: brown;
+    color: black;
 }
 /*class selector */
 .ClassOne{
@@ -27,11 +27,11 @@ a[title="google"]{
 }
  /* descendent selector */
 
- .desc a{
-    color: green;
+ #desc a{
+    color: black;
  }
 
- .child >a{
+ #child >a{
     color: red;
  }
  
@@ -44,16 +44,19 @@ a:link{
 
 a:hover{
     color:black;
+    background-color: yellow;
 }
 a:active{
     color:yellow;
+    background-color: black;
 }
 a:visited{
     color:blue;
 }
-:target{
+a:target{
     color: red;
     border: 2px solid  blue;
+    background-color: white;
 }
 
 /* border */
