@@ -86,7 +86,7 @@ body{
 .btn{
     display: inline-block;
     padding: 20px 30px;
-    background-color:purple ;
+    background-color:black ;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -112,7 +112,8 @@ body{
 }
 
 .product-grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
@@ -122,6 +123,14 @@ body{
     background-color: white;
     margin: 10px;
     border-radius: 10px;
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+    align-items: center;
+    justify-content: center;
 }
 h2 {
     font-size: 22px ;
@@ -142,18 +151,11 @@ h2 {
     padding: 15px;
      border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(o, 0, 0, 0.1);
-    flex: 1 1 250px;
-    min-width: 250px;
+     flex: 1 1 250px; 
+     min-width: 250px; 
 }
 
-.image-container{
-    position: relative;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .image-container img{
     width: 100%;
@@ -181,13 +183,18 @@ h2 {
     font-weight: bold;
     color: black;
 }
-
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
 
 
 .discount{
     position: absolute;  
     top: 5px;
-    right: 5px;
+    right: 50px;
     background: orange;
     color: white;
     padding: 5px 8px;
