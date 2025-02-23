@@ -46,10 +46,9 @@ body{
 }
 
 .nav-menu ul li a:hover{
-    background-color: blue;
     color: white;
-    border-radius: 15px;
-
+    background-color: #cda45e;
+    border-radius: 5px;
 }
 
 /* Hero image */
