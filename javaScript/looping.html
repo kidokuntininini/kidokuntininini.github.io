@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <script>
+    for(let i=0; i<10 ;i++){
+        document.write(`<h1>Hello World</h1>`);
+    }
+
+    let laptopLists = ['Dell','Lenovo','Asus','Hp','Mac'];
+    for(let j=0; j<laptopLists.length; j++){
+        document.write(laptopLists[j]+'<br>')
+    }
+
+    for(let k=1;k <12;k++){
+        document.write(`<p> 13 x ${k} = ${13*k}</p>`);
+    }
+
+   
+
+    
+    for(let h=0; h<5 ; h++){
+        for(t=0; t<=h; t++){
+            document.write("*");
+        }
+        document.write("<br>");
+
+    }
+
+    for(let y=0; y<5 ;y++){
+        for(let z=5; z>y;z--){
+            document.write("*");
+        }
+        document.write('<br>');
+     }
+
+     //while
+     let number=Number(prompt("Enter a number"))
+
+     while(number < 100){
+        document.write(`Your Number is ${number} <br>`);
+        number +=5;
+     }
+
+     let no=110;
+     do{
+        document.write(`Your number is = ${no} <br>`);
+
+          no+=2;
+
+        
+     }while (no <100);
+
+     
+
+</script>
+</body>
+</html>

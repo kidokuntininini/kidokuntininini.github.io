@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo-png.png" alt="">
+            <h2>HypeKicks</h2>
+            
+        </div>
+        
+        <div class="search-container">
+        <input   "text" placeholder="Search in Shop" >
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+        
+
+    
+        <div class="nav-menu">
+           <a href="help.html">HELP & SUPPORT</a>
+           <a href="logIn.html">LOGIN</a>
+           <a href="signup.html">SIGN UP</a>
+           <a href="">LANGUAGE</a>
+          
+        </div>
+    </nav>
+
+    <br><br>
+
+    <nav class="navbar3">
+        <ul class="nav-linkss">
+            <li><a href="index.html">HOME</a></li>
+            <li>SIGN UP</li>
+            
+        </ul>
+    </nav>
+    <br><br>
+    <div class="login-container">
+        <h2>Create an Account</h2>
+
+        <form action="welcome.html" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the <a href="terms.html">Terms & Conditions</a> </label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <br><br>
+
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </form>
+<br><br>
+        <div class="social-signup">
+            <p>Or sign up with</p>
+            <button class="google">Sign Up with Google</button>
+            <br><br>
+            <button class="facebook">Sign Up with Facebook</button>
+        </div>
+    </div>
+
+</body>
+</html>

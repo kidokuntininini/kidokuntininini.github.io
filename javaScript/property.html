@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property and method</title>
+</head>
+<body>
+    <h1>Property and Method</h1>
+    <h2 id="createTextNoteId"></h2>
+    <button onclick="createText()">createTextNode</button>
+
+    <script>
+        function createText(){
+            //alert ('Hello')
+            let createTextNoteId=document.getElementById('createTextNoteId');
+            //createTextNoteId.innerText= "Create Text Node";
+            let createText = document.createTextNode('Create Text Node');
+            createTextNoteId.appendChild(createText);
+        }
+    </script>
+</body>
+</html>
