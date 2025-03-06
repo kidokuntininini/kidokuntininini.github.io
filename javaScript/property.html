@@ -8,7 +8,14 @@
 <body>
     <h1>Property and Method</h1>
     <h2 id="createTextNoteId"></h2>
+    <p id="setAtt">This is set attribute</p>
+    <p id="getAtt" style="color: green;font-size: italic;" class="getAttribute">This is Get attribute</p>
+    <p id="removeAtt" style="color: red;">This is remove attribute</p>
     <button onclick="createText()">createTextNode</button>
+    <button onclick="createElementLesson()">createElementNode</button>
+    <button onclick="createSetAtt()">CreateSetAttribute</button>
+    <button onclick="createGetAtt()">CreateGetAttribute</button>
+    <button onclick="changeColor()">ChangeColor</button>
 
     <script>
         function createText(){
@@ -17,6 +24,42 @@
             //createTextNoteId.innerText= "Create Text Node";
             let createText = document.createTextNode('Create Text Node');
             createTextNoteId.appendChild(createText);
+        }
+
+        function createElementLesson(){
+            //alert("Ok");
+            let h3 =document.createElement('h3');
+            //console.log(h3);
+            h3.innerText="This is Create Element";
+            document.body.appendChild(h3);
+        }
+
+        function createSetAtt(){
+            let setAttElement = document.getElementById('setAtt');
+            setAttElement.setAttribute('style', 'color:red; ' )
+
+        }
+
+        function createGetAtt(){
+            let getAttElement =document.getElementById('getAtt');
+            console.log(getAttElement.getAttribute('style'));
+        }
+
+        function changeColor(){
+            let remove =document.getElementById('removeAtt');
+            let colorName =remove.getAttribute('style');
+            console.log(colorName);
+
+            if(  colorName =='color:red;'){
+                remove.removeAttribute('style');
+                remove.setAttribute('style','color:green;');
+            }
+            else{
+                remove.removeAttribute('style');
+                remove.setAttribute('style','color:red;');
+            }
+
+            //remove.removeAttribute('style');
         }
     </script>
 </body>
